@@ -10,16 +10,19 @@
   <main class="page">
     <p class="eyebrow">Privacy Policy</p>
     <h1>Donjon Privacy Policy</h1>
-    <p>Last updated: August 28, 2026</p>
+    <p>Last updated: October 30, 2026</p>
 
     <h2>Overview</h2>
-    <p>Donjon is a macOS menu bar application that backs up folders on your Mac to external USB drives. Donjon does not require an account, collects no personal data, contains no analytics or tracking, and sends nothing over the network.</p>
+    <p>Donjon is a macOS menu bar application that backs up folders on your Mac to the places you choose: external drives, network shares, cloud drive folders, your own SSH servers and S3 storage. Donjon does not require an account, and we collect no personal data: the app has no analytics or tracking, and it sends nothing to us.</p>
 
-    <h2>Your Data Stays on Your Devices</h2>
-    <p>Backup plan configurations and backup history are stored locally on your Mac. Backup snapshots are written only to the external drives you choose. Nothing is uploaded anywhere.</p>
+    <h2>Where Your Data Goes</h2>
+    <p>Backup plans and backup history are stored on your Mac. A description of each plan (its name, folders, exclusions and settings, never its passphrase) is also written next to its backups, so that another Mac can pick the plan up.</p>
+    <p>Your backups go only to the destinations you configure. Donjon connects over the network only to reach them, using the address and credentials you give it. If you use a network share, a cloud drive folder, a server or S3 storage, its provider handles your backups under its own terms and privacy policy.</p>
+    <p>Encrypted plans are encrypted on your Mac before they leave it, file names included, so a destination holds only encrypted data. Encryption is on by default. If you turn it off for a plan, that plan's backups are stored unencrypted, and anyone with access to the destination can read them.</p>
 
-    <h2>Encryption Passphrases</h2>
-    <p>If you enable encryption for a backup plan, your passphrase is stored in the macOS Keychain on your Mac and is used only to encrypt and decrypt your backups locally. It never leaves your machine.</p>
+    <h2>Passphrases and Credentials</h2>
+    <p>Your plan passphrases are stored in the macOS Keychain and are used to encrypt and decrypt your backups on your Mac. They are never sent to us or to your backup destinations. When iCloud Keychain is on, Apple syncs them to your other Macs with end-to-end encryption. You can choose instead to type a passphrase at each backup, in which case Donjon does not store it.</p>
+    <p>Access keys and SSH keys for your destinations stay in the Keychain on your Mac and are used only to sign in to the destination they belong to. An SSH key made in the Secure Enclave never leaves that chip.</p>
 
     <h2>File Access</h2>
     <p>Donjon runs in the macOS App Sandbox and can only read folders you explicitly grant access to (via folder pickers and drive access prompts). Access is used solely to create and restore your backups.</p>
@@ -27,8 +30,40 @@
     <h2>Purchases</h2>
     <p>The optional Donjon Pro upgrade is processed by Apple through the App Store. Donjon receives no personal or payment information from purchases.</p>
 
+    <h2>Crash Reports</h2>
+    <p>If you chose to share analytics with app developers in your Mac's settings, Apple may give us anonymous crash reports and usage statistics about Donjon. You can change this at any time in System Settings.</p>
+
     <h2>Contact</h2>
-    <p>For privacy questions, contact <a href="mailto:comeylo@yahoo.fr">comeylo@yahoo.fr</a>.</p>
+    <p>If you write to us for support, we use your message and your email address only to answer you. For privacy questions, contact <a href="mailto:comeylo@yahoo.fr">comeylo@yahoo.fr</a>.</p>
+
+    <section lang="fr">
+      <h1>Politique de confidentialité de Donjon</h1>
+      <p>Dernière mise à jour : 30 octobre 2026</p>
+
+      <h2>En bref</h2>
+      <p>Donjon est une application de barre des menus pour macOS qui sauvegarde des dossiers de votre Mac aux endroits que vous choisissez : disques externes, partages réseau, dossiers de stockage en ligne, vos propres serveurs SSH et stockage S3. Donjon ne demande aucun compte et nous ne collectons aucune donnée personnelle : l’application ne contient ni statistiques d’usage ni pistage, et elle ne nous envoie rien.</p>
+
+      <h2>Où vont vos données</h2>
+      <p>Les plans de sauvegarde et leur historique sont enregistrés sur votre Mac. Une description de chaque plan (son nom, ses dossiers, ses exclusions et ses réglages, jamais sa phrase de passe) est aussi écrite à côté de ses sauvegardes, pour qu’un autre Mac puisse reprendre le plan.</p>
+      <p>Vos sauvegardes vont uniquement vers les destinations que vous configurez. Donjon ne se connecte au réseau que pour les atteindre, avec l’adresse et les identifiants que vous lui donnez. Si vous utilisez un partage réseau, un dossier de stockage en ligne, un serveur ou un stockage S3, son fournisseur traite vos sauvegardes selon ses propres conditions et sa propre politique de confidentialité.</p>
+      <p>Les plans chiffrés sont chiffrés sur votre Mac avant de le quitter, noms de fichiers compris : une destination ne reçoit que des données chiffrées. Le chiffrement est activé par défaut. Si vous le désactivez pour un plan, ses sauvegardes sont stockées sans chiffrement, et toute personne ayant accès à la destination peut les lire.</p>
+
+      <h2>Phrases de passe et identifiants</h2>
+      <p>Les phrases de passe de vos plans sont conservées dans le trousseau de macOS et servent à chiffrer et déchiffrer vos sauvegardes sur votre Mac. Elles ne sont jamais envoyées ni à nous ni à vos destinations de sauvegarde. Si le trousseau iCloud est activé, Apple les synchronise avec vos autres Mac, avec un chiffrement de bout en bout. Vous pouvez aussi choisir de saisir la phrase de passe à chaque sauvegarde : Donjon ne la conserve alors pas.</p>
+      <p>Les clés d’accès et clés SSH de vos destinations restent dans le trousseau de votre Mac et servent uniquement à se connecter à la destination concernée. Une clé SSH créée dans la Secure Enclave ne quitte jamais cette puce.</p>
+
+      <h2>Accès aux fichiers</h2>
+      <p>Donjon s’exécute dans le bac à sable d’applications de macOS et ne peut lire que les dossiers auxquels vous donnez accès (sélecteurs de dossiers et demandes d’accès aux disques). Cet accès sert uniquement à créer et à restaurer vos sauvegardes.</p>
+
+      <h2>Achats</h2>
+      <p>L’option Donjon Pro est gérée par Apple via l’App Store. Donjon ne reçoit aucune information personnelle ou de paiement liée aux achats.</p>
+
+      <h2>Rapports d’erreurs</h2>
+      <p>Si vous avez choisi de partager vos analyses avec les développeurs dans les réglages de votre Mac, Apple peut nous transmettre des rapports d’erreurs et des statistiques d’usage anonymes sur Donjon. Vous pouvez modifier ce choix à tout moment dans les Réglages Système.</p>
+
+      <h2>Contact</h2>
+      <p>Si vous nous écrivez pour obtenir de l’aide, nous n’utilisons votre message et votre adresse e-mail que pour vous répondre. Pour toute question sur la confidentialité, écrivez à <a href="mailto:comeylo@yahoo.fr">comeylo@yahoo.fr</a>.</p>
+    </section>
 
     <p><a href="index.html">Back to Donjon</a></p>
   </main>
